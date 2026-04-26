@@ -15080,7 +15080,7 @@ system_desktop
   }
   /* Inner content max-width — keeps lines readable without breaking flex flow */
   [data-section-id="69e0ebda1eab851a25ea0ab5"] .fe-block .sqs-block {
-    max-width: 900px !important;
+    max-width: 1180px !important;
     margin: 0 auto !important;
   }
   /* Legacy row/col layout (fallback) */
@@ -15167,14 +15167,14 @@ system_desktop
     font-size: clamp(2.5rem, 5.5vw, 4.5rem) !important;
     line-height: 1.05 !important;
     letter-spacing: -0.02em !important;
-    max-width: 900px !important;
+    max-width: 1180px !important;
     margin: 0 auto !important;
   }
 
   /* Subtitle — muted gray, narrower; specific block to avoid affecting headline/badge */
   [data-section-id="69e0ebda1eab851a25ea0ab5"] .fe-block-6f8be7e6d6d738073537 .sqs-block,
   [data-section-id="69e0ebda1eab851a25ea0ab5"] .fe-block-6f8be7e6d6d738073537 .sqs-block-content {
-    max-width: 760px !important;
+    max-width: 940px !important;
     margin: 0 auto !important;
   }
   [data-section-id="69e0ebda1eab851a25ea0ab5"] .fe-block-6f8be7e6d6d738073537 p {
@@ -15304,6 +15304,8 @@ system_desktop
     gap: 1.25rem 2.75rem !important;
     grid-template-columns: none !important;
     grid-template-rows: none !important;
+    max-width: 1180px !important;
+    margin: 0 auto !important;
   }
   [data-section-id="69e1ad50a767503fc9fa42fa"] .fe-block {
     grid-area: auto !important;
@@ -15384,6 +15386,14 @@ system_desktop
     background-color: #f4f4f4 !important;
   }
 
+  /* Unified middle width for all content sections — narrower than full-bleed
+     (1536px), wider than the previous 900px hero constraint. */
+  .page-section .content-wrapper {
+    max-width: 1180px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+
   /* Tighten hero bottom + logos top so buttons / image / logos sit close */
   [data-section-id="69e0ebda1eab851a25ea0ab5"] {
     padding-bottom: 0.5rem !important;
@@ -15396,8 +15406,10 @@ system_desktop
   /* Postcard collage between hero buttons and trust logos */
   .postcard-collage-section {
     width: 100% !important;
+    max-width: 100% !important;
     padding: 0 1.5rem !important;
     background: #f4f4f4 !important;
+    box-sizing: border-box !important;
   }
   .postcard-collage-inner {
     max-width: 1180px !important;
@@ -15407,7 +15419,7 @@ system_desktop
   .postcard-collage-img {
     display: block !important;
     width: 100% !important;
-    max-width: 980px !important;
+    max-width: 1180px !important;
     height: auto !important;
     margin: 0 auto !important;
   }
