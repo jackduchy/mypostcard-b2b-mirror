@@ -2168,17 +2168,25 @@
       }
     </style>
   <style class="transform-overrides-vars">
-      
+
     </style></div></div></div></div></div>
     </div>
-  
+
   </div>
-  
+
 </section>
 
-  
-    
-    
+<section class="postcard-collage-section" aria-label="Beispiel-Mailings unserer Kunden">
+  <div class="postcard-collage-inner">
+    <img class="postcard-collage-img"
+         src="assets/hero-postcards.png"
+         alt="Beispiele für Print-Mailings: blue-tomato, KoRo, Red Bull, gitti, LIMMALAND" />
+  </div>
+</section>
+
+
+
+
 
 
   
@@ -15368,6 +15376,30 @@ system_desktop
   /* Hide "Vertrauen uns bereits:" label above the trust logos */
   .fe-block-yui_3_17_2_1_1776358798546_386198 {
     display: none !important;
+  }
+
+  /* Postcard collage between hero buttons and trust logos */
+  .postcard-collage-section {
+    width: 100% !important;
+    padding: 2.5rem 1.5rem 2rem !important;
+    background: transparent !important;
+  }
+  .postcard-collage-inner {
+    max-width: 1180px !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+  }
+  .postcard-collage-img {
+    display: block !important;
+    width: 100% !important;
+    max-width: 980px !important;
+    height: auto !important;
+    margin: 0 auto !important;
+  }
+  @media (max-width: 540px) {
+    .postcard-collage-section {
+      padding: 1.5rem 1rem 1rem !important;
+    }
   }
 
   /* ===== Metrics strip — peec.ai-inspired upgrade ===== */
