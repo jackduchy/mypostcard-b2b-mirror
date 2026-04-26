@@ -15378,11 +15378,26 @@ system_desktop
     display: none !important;
   }
 
+  /* Match hero, collage and trust-logos backgrounds to image bg (#f4f4f4) */
+  [data-section-id="69e0ebda1eab851a25ea0ab5"] .section-background,
+  [data-section-id="69e1ad50a767503fc9fa42fa"] .section-background {
+    background-color: #f4f4f4 !important;
+  }
+
+  /* Tighten hero bottom + logos top so buttons / image / logos sit close */
+  [data-section-id="69e0ebda1eab851a25ea0ab5"] {
+    padding-bottom: 0.5rem !important;
+  }
+  [data-section-id="69e1ad50a767503fc9fa42fa"] .content-wrapper {
+    padding-top: 0.25rem !important;
+    padding-bottom: 1.5rem !important;
+  }
+
   /* Postcard collage between hero buttons and trust logos */
   .postcard-collage-section {
     width: 100% !important;
-    padding: 0.25rem 1.5rem 0 !important;
-    background: transparent !important;
+    padding: 0 1.5rem !important;
+    background: #f4f4f4 !important;
   }
   .postcard-collage-inner {
     max-width: 1180px !important;
@@ -15398,7 +15413,7 @@ system_desktop
   }
   @media (max-width: 540px) {
     .postcard-collage-section {
-      padding: 0.25rem 0.5rem 0 !important;
+      padding: 0 0.5rem !important;
     }
   }
 
